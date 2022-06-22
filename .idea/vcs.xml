@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SS2022/Development/uebung08/rest-student-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SS2022/Development/uebung09/rest-student-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SS2022/Development/uebung09/rest-student-template/src/hazelCastExample/hz-map-reduce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SS2022/Solutions/uebung08/vs_rest-student-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Development/uebung06_vs_grpc-streams/vs_grpc-streams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Development/uebung06b/grpc-maven-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Development/uebung07/rest-student-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Development/vorlage/vs_rest-vorlage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung03/src/c/simple-socket-chat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung06/a/vs_06_rmi-byreference-callback" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung06/b/vs_06_rmi-byreference-callback" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung06/c/vs_06_rmi-byreference-callback" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung06b/vs_grcp-streams-impl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung_04/a_04_messaging-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung_04/b_chat-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/Solutions/uebung_05/vs_05_rmi-grundlagen" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+.DSStore
+target
+out
+build
+.idea
+*.iml

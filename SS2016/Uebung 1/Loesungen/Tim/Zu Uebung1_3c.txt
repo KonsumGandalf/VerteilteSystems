@@ -1,0 +1,4 @@
+c) Ist hier ein notifyAll() bzw. ein signalAll() notwendig? Begründen Sie!
+
+Nein, da alle Objekte nur immer die gleiche Methode ausführen --> Es ist egal, welches Auto als nächstes ein-/ bzw ausfährt.
+--> Es gibt anders als bei Einzahler/ Auszahler keine 2 verschiedenen Typen von Autos

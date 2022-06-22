@@ -1,0 +1,23 @@
+syntax = "proto3";
+package your.pkg;
+option java_multiple_files = true;
+import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
+// import "google/protobuf/empty.proto";
+// Datentypen/Messagetypen definieren:
+
+message Messwert {
+  string beschreibung = 1;
+  double wert = 2;
+}
+
+message Bewertung {
+  string text = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
+
+message Void {}
+
+service MesswertService {
+  rpc speichern(Messwert) returns (Void);
+  rpc ueberwachungStarten(stream Messwert) returns (stream Bewertung);
+}

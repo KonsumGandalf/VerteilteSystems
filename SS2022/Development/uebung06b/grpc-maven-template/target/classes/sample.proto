@@ -1,0 +1,21 @@
+// This is a protobuf sample for a "sample service"
+syntax = "proto3";
+package bring.me.api.grpc;
+option java_multiple_files = true;
+//import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
+
+message Order {
+  string dish = 1;
+  string creditCardNo = 2;
+  string address = 3;
+}
+
+message Invoice {
+  int32 sum = 1;
+  int32 vat = 2;
+}
+// für Streaming is Blocking nicht möglich! => onNext in OrderServiceImpl mehrmals aufrufbar
+service OrderService {
+  rpc orderDish (Order) returns (stream Invoice);
+  rpc businessOrder (stream Order) returns (Invoice);
+}

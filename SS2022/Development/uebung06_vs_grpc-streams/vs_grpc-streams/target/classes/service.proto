@@ -1,0 +1,27 @@
+syntax = "proto3";
+package messung.amt.api;
+option java_multiple_files = true;
+//import "google/protobuf/timestamp.proto"; // see link "Protocol Buffers Well-Known Types" in README for pre-defined types
+
+message Void{}
+
+message Messwert{
+  int32 id = 1;
+  int32 temperature = 2;
+  string uhrzeit = 3;
+  string author = 4;
+  string ort = 5;
+}
+
+message Bericht{
+  int32 id = 1;
+  int32 risk = 2;
+  string uhrzeit = 3;
+  string author = 4;
+  string description = 5;
+}
+
+service ReportService{
+  rpc store (Messwert) returns (Void);
+  rpc analyseData(stream Messwert) returns (stream Bericht);
+}

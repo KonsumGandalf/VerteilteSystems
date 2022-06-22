@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/vorlage/vs_rest-vorlage/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung06/alex/06_RMI_byReference_Rückgabe/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung07/rest-student-template/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung08/rest-student-template/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung09/rest-student-template/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung06b/grpc-maven-template/pom.xml" />
+        <option value="$PROJECT_DIR$/uebung06_vs_grpc-streams/vs_grpc-streams/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="openjdk-17" project-jdk-type="JavaSDK" />
+</project>

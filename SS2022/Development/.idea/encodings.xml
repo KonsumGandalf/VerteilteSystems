@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/uebung06_vs_grpc-streams/vs_grpc-streams/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung06_vs_grpc-streams/vs_grpc-streams/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung06b/grpc-maven-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung06b/grpc-maven-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung07/rest-student-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung07/rest-student-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung08/rest-student-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung08/rest-student-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung09/rest-student-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/uebung09/rest-student-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vorlage/vs_rest-vorlage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vorlage/vs_rest-vorlage/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

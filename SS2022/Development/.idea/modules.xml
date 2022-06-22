@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/uebung06/alex/06_RMI_byReference_Rückgabe/06_RMI_byReference_Rückgabe.iml" filepath="$PROJECT_DIR$/uebung06/alex/06_RMI_byReference_Rückgabe/06_RMI_byReference_Rückgabe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Development.iml" filepath="$PROJECT_DIR$/.idea/Development.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uebung06b/grpc-maven-template/grpc-maven-template.iml" filepath="$PROJECT_DIR$/uebung06b/grpc-maven-template/grpc-maven-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uebung06_vs_grpc-streams/vs_grpc-streams/grpc-streams.iml" filepath="$PROJECT_DIR$/uebung06_vs_grpc-streams/vs_grpc-streams/grpc-streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uebung07/rest-student-template/rest-student-template.iml" filepath="$PROJECT_DIR$/uebung07/rest-student-template/rest-student-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uebung08/rest-student-template/rest-student-template (1).iml" filepath="$PROJECT_DIR$/uebung08/rest-student-template/rest-student-template (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/uebung09/rest-student-template/rest-student-template (2).iml" filepath="$PROJECT_DIR$/uebung09/rest-student-template/rest-student-template (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/vorlage/vs_rest-vorlage/rest_vorlage.iml" filepath="$PROJECT_DIR$/vorlage/vs_rest-vorlage/rest_vorlage.iml" />
+    </modules>
+  </component>
+</project>

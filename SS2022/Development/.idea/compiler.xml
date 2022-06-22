@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="06_RMI_byReference_Rückgabe" />
+        <module name="grpc-streams" />
+        <module name="rest_vorlage" />
+        <module name="grpc-maven-template" />
+        <module name="rest-student-template (2)" />
+        <module name="rest-student-template (1)" />
+        <module name="rest-student-template" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="06_RMI_byReference_Rückgabe" target="16" />
+      <module name="grpc-maven-template" target="16" />
+      <module name="grpc-streams" target="16" />
+      <module name="rest-student-template" target="16" />
+      <module name="rest-student-template (1)" target="16" />
+      <module name="rest-student-template (2)" target="16" />
+      <module name="rest_vorlage" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
