@@ -20,10 +20,9 @@ public class VeranstaltungsMapper implements Mapper<String, Veranstaltung, Strin
         if(keywords != null){
             for(String keyword: keywords) {
                 if (!(valueIn.getTitel().contains(keyword) || valueIn.getBeschreibung().contains(keyword))){
-                    return;
+                    context.emit(keyword, valueIn);
                 }
             }
-            context.emit(valueIn.getId(), valueIn);
         }
     }
 

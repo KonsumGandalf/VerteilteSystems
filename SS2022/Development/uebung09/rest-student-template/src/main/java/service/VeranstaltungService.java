@@ -5,11 +5,10 @@ import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.ICompletableFuture;
 import com.hazelcast.core.IMap;
-import com.hazelcast.mapreduce.Job;
-import com.hazelcast.mapreduce.JobTracker;
-import com.hazelcast.mapreduce.KeyValueSource;
-import com.hazelcast.mapreduce.Mapper;
+import com.hazelcast.mapreduce.*;
 import de.othr.vs.xml.Veranstaltung;
+import factories.VeranstaltungCollator;
+import factories.VeranstaltungReducerFactory;
 import factories.VeranstaltungsMapper;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -33,7 +32,7 @@ public class VeranstaltungService {
         this.veranstaltungIMap = hzInstance.getMap("veranstaltungen");
     } */
 
-    private static Map<String, List<Veranstaltung>> mapReduce(HazelcastInstance hazelcastInstance, String[] keywords){
+    private static ArrayList<Veranstaltung> mapReduce(HazelcastInstance hazelcastInstance, String[] keywords){
         try{
             JobTracker jobTracker = hazelcastInstance.getJobTracker("default");
 
@@ -42,9 +41,10 @@ public class VeranstaltungService {
 
             Job<String, Veranstaltung> job= jobTracker.newJob(source);
 
-            ICompletableFuture<Map<String, List<Veranstaltung>>> future = job
+            JobCompletableFuture<ArrayList<Veranstaltung>> future = job
                     .mapper(new VeranstaltungsMapper(keywords))
-                    .submit();
+                    .reducer(new VeranstaltungReducerFactory())
+                    .submit(new VeranstaltungCollator());
             // System.out.println(future.get());
             return future.get();
         } catch (Exception e) {
@@ -97,12 +97,12 @@ public class VeranstaltungService {
         System.out.println(Arrays.toString(keywordArray));
         System.out.println(Arrays.toString(keyword2Array));
 
-        Map hzMap = mapReduce(hzInstance, keyword2Array);
-        System.out.println((Collection<Veranstaltung>) (new ArrayList<>(hzMap.values())).get(0));
+        ArrayList<Veranstaltung> list = mapReduce(hzInstance, keyword2Array);
+        // System.out.println((Collection<Veranstaltung>) (new ArrayList<>(hzMap.values())).get(0));
         /*return veranstaltungIMap.values().stream()
                 .filter(veranstaltung -> filterKeywordList(veranstaltung, keyword2Array))
                 .collect(Collectors.toSet());*/
-        return (Collection<Veranstaltung>) (new ArrayList<>(hzMap.values())).get(0);
+        return list.stream().toList();
     }
 
 }
