@@ -1,0 +1,12 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 http://maven.apache.org/xsd/settings-1.2.0.xsd">
+    <mirrors>
+        <mirror>
+            <id>oth</id>
+            <mirrorOf></mirrorOf>
+            <name></name>
+            <url>http://im-lamport:8082/artifactory/ext-release-local/</url>
+        </mirror>
+    </mirrors>
+</settings>
